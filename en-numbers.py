@@ -42,7 +42,6 @@ while True:
 		print "it's actually " + str( number )
 		subprocess.call( ['say', 'wrong'] )
 
-	print correct, amount
 	time.sleep( 0.5 )
 
 print 'correct rate = ' + str( int( float( correct ) / amount * 100.0 ) ) + '%'
