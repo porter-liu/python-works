@@ -269,7 +269,7 @@ def home():
         c.setopt( pycurl.URL, url )
         if request.form.get( 'ntlm', '' ) == '1':
             c.setopt( pycurl.HTTPAUTH, pycurl.HTTPAUTH_NTLM )
-        c.setopt( pycurl.HTTPHEADER, ["text/xml; charset=utf-8"] )
+        c.setopt( pycurl.HTTPHEADER, ["Content-Type: text/xml; charset=utf-8"] )
         c.setopt( pycurl.USERPWD, username_password )
         c.setopt( pycurl.POST, 1 )
         c.setopt( pycurl.POSTFIELDS, post_data )
